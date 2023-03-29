@@ -1,0 +1,68 @@
+<%@ Page Language="C#" %>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Facturación</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <h2>Datos de facturación</h2>
+            <fieldset>
+                <legend>Encabezado de factura</legend>
+                <label for="fecha">Fecha:</label>
+                <asp:TextBox ID="fecha" runat="server" ReadOnly="true"></asp:TextBox>
+                <br />
+                <label for="numFactura"># de factura:</label>
+                <asp:TextBox ID="numFactura" runat="server" ReadOnly="true"></asp:TextBox>
+                <br />
+                <label for="numDocCliente"># de documento del cliente:</label>
+                <asp:TextBox ID="numDocCliente" runat="server"></asp:TextBox>
+                <br />
+                <label for="nombresCliente">Nombres del cliente:</label>
+                <asp:TextBox ID="nombresCliente" runat="server"></asp:TextBox>
+                <br />
+                <label for="apellidosCliente">Apellidos del cliente:</label>
+                <asp:TextBox ID="apellidosCliente" runat="server"></asp:TextBox>
+                <br />
+                <label for="direccionCliente">Dirección del cliente:</label>
+                <asp:TextBox ID="direccionCliente" runat="server"></asp:TextBox>
+                <br />
+                <label for="telefonoCliente">Teléfono del cliente:</label>
+                <asp:TextBox ID="telefonoCliente" runat="server"></asp:TextBox>
+                <br />
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>Detalle de factura</legend>
+                <table>
+                    <tr>
+                        <th>Código del artículo</th>
+                        <th>Cantidad</th>
+                        <th>Precio unitario de venta</th>
+                    </tr>
+                    <tr>
+                        <td><asp:TextBox ID="codigoArticulo1" runat="server"></asp:TextBox></td>
+                        <td><asp:TextBox ID="cantidad1" runat="server"></asp:TextBox></td>
+                        <td><asp:TextBox ID="precioVenta1" runat="server"></asp:TextBox></td>
+                    </tr>
+                    <tr>
+                        <td><asp:TextBox ID="codigoArticulo2" runat="server"></asp:TextBox></td>
+                        <td><asp:TextBox ID="cantidad2" runat="server"></asp:TextBox></td>
+                        <td><asp:TextBox ID="precioVenta2" runat="server"></asp:TextBox></td>
+                    </tr>
+                    <tr>
+                        <td><asp:TextBox ID="codigoArticulo3" runat="server"></asp:TextBox></td>
+                        <td><asp:TextBox ID="cantidad3" runat="server"></asp:TextBox></td>
+                        <td><asp:TextBox ID="precioVenta3" runat="server"></asp:TextBox></td>
+                    </tr>
+                </table>
+                <br />
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>Totales</legend>
+                <label for="valorBruto">Valor bruto:</label>
+                <asp:TextBox ID="valorBruto" runat="server" ReadOnly="true"></asp:TextBox>
+                <br />
